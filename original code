@@ -22,6 +22,7 @@ function inputBoxes(){
 	var eight = document.getElementById("eight").value;
 	var nine = document.getElementById("nine").value;
 	/*var oneval = one.value;
+        var aaron = test;
 	var twoval = two.value;
 	var threeval = three.value;
 	var fourval = four.value;
