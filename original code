@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mid Term Part 2</title>
+<style>
+div {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+</style>
+<h1>Business Card Creator</h1>
+<script>
+function inputBoxes(){
+	var one = document.getElementById("one").value;
+	var two = document.getElementById("two").value;
+	var three = document.getElementById("three").value;
+	var four = document.getElementById("four").value;
+	var five = document.getElementById("five").value;
+	var six = document.getElementById("six").value;
+	var seven = document.getElementById("seven").value;
+	var eight = document.getElementById("eight").value;
+	var nine = document.getElementById("nine").value;
+	/*var oneval = one.value;
+	var twoval = two.value;
+	var threeval = three.value;
+	var fourval = four.value;
+	var fiveval = five.value;
+	var sixval = six.value;
+	var sevenval = seven.value;
+	var eightval = eight.value;
+	var nineval = nine.value;*/
+	document.getElementById("busCard").innerHTML = one + " " + two + "<br/>" + three + " " + "<br/>" + four + ", " + five + " " + six + "<br/>" + seven + "<br/>" + eight + "<br/>" + nine;
+					}
+</script>
+<body>
+<h3>Please correctly fill in all of the information underneath</h3>
+<p>First Name: </p>
+<input type="text" id="one" />
+<p>Last Name: </p>
+<input type="text" id="two" />
+<p>Street: </p>
+<input type="text" id="three" />
+<p>City: </p>
+<input type="text" id="four" />
+<p>State: </p>
+<input type="text" id="five" />
+<p>Zip: </p>
+<input type="text" id="six" />
+<p>Email: </p>
+<input type="text" id="seven" />
+<p>Phone Number: </p>
+<input type="text" id="eight" />
+<p>Slogan: </p>
+<input type="text" id="nine" />
+<br/><br/>
+<button onclick="inputBoxes()">Generate Business Card</button>
+<br/><br/>
+<div contentEditable="true" id="busCard"><img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQCze-mfukcuvzKk7Ilj2zQ0CS6PbOkq7ZhRInnNd1Yz3TQzU4e&t=1" />
+</div>
+</body>
+</html>
