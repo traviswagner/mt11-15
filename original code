@@ -3,10 +3,24 @@
 <head>
 <title>Mid Term Part 2</title>
 <style>
-div {
+div#busCard {  
   width: 300px;
   height: 200px;
   border: 1px solid #ccc;
+}
+div.cardimage {
+	border:1px solid black;
+	width: 50px;
+	float: left;
+}
+div#innerbusCard {
+	clear: both;
+	padding: 10px;
+}
+div#innerbusCardName {
+	font-size: 35px;
+	font-weight: bold;
+	padding: 10px 0 0 60px;
 }
 </style>
 <h1>Business Card Creator</h1>
@@ -22,7 +36,6 @@ function inputBoxes(){
 	var eight = document.getElementById("eight").value;
 	var nine = document.getElementById("nine").value;
 	/*var oneval = one.value;
-        var aaron = test;
 	var twoval = two.value;
 	var threeval = three.value;
 	var fourval = four.value;
@@ -31,7 +44,8 @@ function inputBoxes(){
 	var sevenval = seven.value;
 	var eightval = eight.value;
 	var nineval = nine.value;*/
-	document.getElementById("busCard").innerHTML = one + " " + two + "<br/>" + three + " " + "<br/>" + four + ", " + five + " " + six + "<br/>" + seven + "<br/>" + eight + "<br/>" + nine;
+	document.getElementById("innerbusCardName").innerHTML = one + " " + two;
+	document.getElementById("innerbusCard").innerHTML = three + " " + "<br/>" + four + ", " + five + " " + six + "<br/>" + seven + "<br/>" + eight + "<br/>" + nine;
 					}
 </script>
 <body>
@@ -57,7 +71,10 @@ function inputBoxes(){
 <br/><br/>
 <button onclick="inputBoxes()">Generate Business Card</button>
 <br/><br/>
-<div contentEditable="true" id="busCard"><img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQCze-mfukcuvzKk7Ilj2zQ0CS6PbOkq7ZhRInnNd1Yz3TQzU4e&t=1" />
+<div contentEditable="true" id="busCard">
+	<div class="cardimage"><img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQCze-mfukcuvzKk7Ilj2zQ0CS6PbOkq7ZhRInnNd1Yz3TQzU4e&t=1" /></div>
+	<div id="innerbusCardName"></div>
+	<div id="innerbusCard"></div>
 </div>
 </body>
 </html>
