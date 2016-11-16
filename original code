@@ -12,6 +12,8 @@ div.cardimage {
 	border:1px solid black;
 	width: 50px;
 	float: left;
+	padding-left: 5px;
+	padding-top: 4px;
 }
 div#innerbusCard {
 	clear: both;
@@ -72,7 +74,7 @@ function inputBoxes(){
 <button onclick="inputBoxes()">Generate Business Card</button>
 <br/><br/>
 <div contentEditable="true" id="busCard">
-	<div class="cardimage"><img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQCze-mfukcuvzKk7Ilj2zQ0CS6PbOkq7ZhRInnNd1Yz3TQzU4e&t=1" /></div>
+	<div class="cardimage"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Computer_lab_icon.svg/1024px-Computer_lab_icon.svg.png" height="45" width="45"/></div>
 	<div id="innerbusCardName"></div>
 	<div id="innerbusCard"></div>
 </div>
